@@ -1,1 +1,75 @@
-<p>home works!</p>
+<app-navbar></app-navbar>
+
+
+    <!-- Carousel -->
+ <div class="container">
+    <ngb-carousel *ngIf="images" [showNavigationArrows]="showNavigationArrows" [showNavigationIndicators]="showNavigationIndicators">
+        <ng-template ngbSlide *ngFor="let image of images">
+          <div class="picsum-img-wrapper">
+            <img [src]="image" alt="Random slide">
+          </div>
+          <div class="carousel-caption">
+            <h3>No mouse navigation</h3>
+            <p>This carousel hides navigation arrows and indicators.</p>
+          </div>
+        </ng-template>
+      </ngb-carousel>
+      
+      <hr>
+      
+      <!-- <div class="btn-group" role="group" aria-label="Carousel toggle controls">
+        <button type="button" (click)="showNavigationArrows = !showNavigationArrows" class="btn btn-outline-dark btn-sm">Toggle navigation arrows</button>
+        <button type="button" (click)="showNavigationIndicators = !showNavigationIndicators" class="btn btn-outline-dark btn-sm">Toggle navigation indicators</button>
+      </div> -->
+ </div>
+    
+    <!-- section2 -->
+    <div class="about">
+        <h3>Annie Delicacies</h3>
+        <h5>Get your cake for all occassion, at any time</h5>
+
+        <br>
+        <hr>
+
+        <div class="anne">
+            <br>
+            <br>
+            <h2>
+                "They say money cant buy happines <br>but it can buy cakes; <br> and thats kinda the same thing"
+            </h2>
+        </div>
+        <div class="img">
+                <img src="assets/anni2.jpg" alt="" height="350px" width="400px">
+        </div>
+    </div>
+    <br>
+    <hr>
+    <br>
+    <div class="card-deck">
+        <div class="card">
+            <img class="card-img-top" src="assets/birthday 2.jpg" alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
+                    content. This content is a little bit longer.</p>
+                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            </div>
+        </div>
+        <div class="card">
+            <img class="card-img-top" src="assets/bb1.jpg" alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            </div>
+        </div>
+        <div class="card">
+            <img class="card-img-top" src="assets/anni.jpg" alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                    content. This card has even longer content than the first to show that equal height action.</p>
+                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            </div>
+        </div>
+    </div>
