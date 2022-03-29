@@ -10,7 +10,8 @@ import { ContactComponent } from './contact/contact.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { LoginComponent } from './login/login.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-import { AdminComponent } from './admin/admin.component';
+import { FooterComponent } from './footer/footer.component';
+import { AdminsComponent } from './admins/admins.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,9 @@ import { AdminComponent } from './admin/admin.component';
     ContactComponent,
     NavbarComponent,
     LoginComponent,
-    AdminComponent
+    AdminsComponent,
+    FooterComponent,
+    AdminsComponent
   ],
   imports: [
     BrowserModule,
