@@ -12,6 +12,7 @@ import { LoginComponent } from './login/login.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { FooterComponent } from './footer/footer.component';
 import { AdminsComponent } from './admins/admins.component';
+import { AddProductComponent } from './add-product/add-product.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { AdminsComponent } from './admins/admins.component';
     LoginComponent,
     AdminsComponent,
     FooterComponent,
-    AdminsComponent
+    AdminsComponent,
+    AddProductComponent
   ],
   imports: [
     BrowserModule,
