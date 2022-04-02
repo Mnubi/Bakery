@@ -4,3 +4,55 @@
     </form>
     <label>Choose file</label>
 </div>
+
+<div class="col-md-12 text-center">
+    <button
+    id="1"
+    type="button"
+    class="btn purple mt-2"
+    (click)="openPopup()">Add Staff
+  </button>
+</div>   
+<!-- Modal -->
+<div class="modal"
+tabindex="-1"
+role="dialog"
+[ngStyle]="{'display':displayStyle}">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Add Staff</h5>
+            </div>
+            <div class="modal-body">
+                <form #f="ngForm" [formGroup]="form" (ngSubmit)="addStaff()">
+                    <div class="mb-3 form-group">
+                        <label class="form-label">Name of Item</label>
+                        <input formControlName="username" type="text" class="form-control" name="username">
+                    </div>
+                    <div class="mb-3 form-group">
+                        <label class="form-label">Contact</label>
+                        <input formControlName="contact" type="number" class="form-control" name="contact">
+                    </div>
+                    <div class="mb-3 form-group">
+                        <label class="form-label">Department</label>
+                        <input formControlName="department" type="text" class="form-control" name="department">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" 
+                    (click)="closePopup()">
+              Close
+            </button>
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="text-center">
+    <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn btn1 text-light">Add
+        Staff</button>
+</div>
