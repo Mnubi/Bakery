@@ -1,4 +1,7 @@
-.card img{
-    height: 15rem;
-    width: 18rem;
+
+
+.card-deck > .post{
+    float: left;
+    width: 33%;
+    margin-bottom: 30px;
 }

@@ -9,7 +9,7 @@
 <div class="container">
     <div class="row align-items-center">
         <div class="col-lg-2 col-4">
-            Coampany Name
+            Company Name
         </div>
         <div class="col-lg-6 col-sm-12">
             <form action="#" class="search">
@@ -59,6 +59,8 @@
             </ol>
         </nav>
     </div> <!-- container //  -->
+
+    
 </section>
 <!-- ========================= SECTION INTRO END// ========================= -->
 
@@ -100,6 +102,9 @@
 
                             </div> <!-- card-body.// -->
                         </div>
+                        <div>
+                            <app-add-product (addProduct)="addNewCake($event)"></app-add-product>
+                        </div>
                     </article> <!-- filter-group  .// -->
 
 
@@ -128,9 +133,10 @@
                     </div>
                 </header><!-- sect-heading -->
 
-                <div class="card-deck" *ngFor='let cake of cakes; let i = index'>
+                <div class="card-deck" *ngFor='let cake of cakes; let i = index' >
+                    
                    
-                    <div class="card" style="width: 18rem;">
+                    <div class="post card" style="width: 18rem;" >
                         <img class="card-img-top" src="assets/bb1.jpg" alt="Card image cap">
                         <div class="card-body">
                             <a href="" ><h4>{{ cake.Name}} </h4></a>
