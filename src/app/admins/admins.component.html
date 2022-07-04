@@ -132,20 +132,47 @@
                         </div>
                     </div>
                 </header><!-- sect-heading -->
-
-                <div class="card-deck" *ngFor='let cake of cakes; let i = index' >
+                
+                <section>
                     
-                   
-                    <div class="post card" style="width: 18rem;" >
-                        <img class="card-img-top" src="assets/bb1.jpg" alt="Card image cap">
-                        <div class="card-body">
-                            <a href="" ><h4>{{ cake.Name}} </h4></a>
-                          <p class="card-text">{{ cake.Description }}</p>
-                          <h3> Ksh. {{ cake.Price }}</h3>
+                    <div class="card-deck" >
+                        
+                        <div class="card" *ngFor='let cake of cakes; let i = index'>
+                          <!-- <img class="card-img-top" src="assets/bb1.jpg" alt="Card image cap"> -->
+                          <div class="card-body">
+                            <h5 class="card-title">{{ cake.Name}}</h5>
+                            <p class="card-text">{{ cake.Description }}</p>
+                            <h3> Ksh. {{ cake.Price }}</h3>
+                            </div>
+                          <div class="card-footer">
+                            <small class="text-muted">Last updated 3 mins ago</small>
+                          </div>
                         </div>
+                        <div class="card">
+                            <img class="card-img-top" src="..." alt="Card image cap">
+                            <div class="card-body">
+                              <h5 class="card-title">Card title</h5>
+                              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                            </div>
+                            <div class="card-footer">
+                              <small class="text-muted">Last updated 3 mins ago</small>
+                            </div>
+                          </div>
+                          <div class="card">
+                            <img class="card-img-top" src="..." alt="Card image cap">
+                            <div class="card-body">
+                              <h5 class="card-title">Card title</h5>
+                              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                            </div>
+                            <div class="card-footer">
+                              <small class="text-muted">Last updated 3 mins ago</small>
+                            </div>
+                        </div>
+                        
+                        
                     </div>
-                    <br>
-                </div>
+                </section>
+                
 
 
 
