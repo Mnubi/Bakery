@@ -4,21 +4,24 @@
 }
 .about{
     height: 300px;
-    /* background-color: rgb(192, 140, 240); */
     margin-left: 0px;
     margin-right: 0px;
     height: 700px;
     border-radius: 2%;
-    background-image: url('/src/assets/chocolate.jpg');
+    background-image: url('/assets/white.jpg');
+    background-size:cover;
+    width:auto;
+    background-position: center;
 
 }
 .about h3{
-    padding-top:20px;
+    padding-top: 190px;
     text-align: center;
     font-weight: bold;
     font-size: 35px;
 }
 .about h5{
+    padding-top: 80px;
     text-align: center;
     font-style: italic;
 }
@@ -27,6 +30,7 @@
     text-align: center;
 }
 .anne{
+    margin-top: 100px;
     width: 50%;
     float: left;
     text-align: center;
